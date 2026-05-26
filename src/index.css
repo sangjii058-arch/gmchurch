@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-serif: "Noto Serif KR", serif;
+  --font-sans: "Manrope", sans-serif;
+
+  --color-primary: #4a5d4e; /* Deep Forest Green */
+  --color-secondary: #8c7b6c; /* Warm Taupe */
+  --color-accent: #d4a373; /* Muted Gold/Sand */
+  --color-background: #fdfaf6; /* Warm Cream */
+  --color-surface: #ffffff;
+  --color-on-background: #2c2c2c;
+  --color-on-surface: #3d3d3d;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
