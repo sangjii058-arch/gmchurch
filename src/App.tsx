@@ -97,15 +97,6 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-serif text-xl font-bold">
-              光
-            </div>
-            <span className={cn(
-              "text-xl font-serif font-bold tracking-tight",
-              scrolled ? "text-primary" : "text-white"
-            )}>
-              광명교회
-            </span>
           </div>
 
           {/* Desktop Nav */}
