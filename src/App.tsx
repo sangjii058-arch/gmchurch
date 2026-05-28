@@ -67,8 +67,8 @@ export default function App() {
       thumbnail: "https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=600&auto=format&fit=crop"
     },
     {
-      title: "주일 2부 예배 실시간 중계",
-      desc: "매주 일요일 오전 11시에 드려지는 주일 2부 예배 실시간 라이브 영상입니다.",
+      title: "주일만찬예배 실시간 중계",
+      desc: "매주 일요일 오전 11시에 드려지는 주일만찬예배 실시간 라이브 영상입니다.",
       url: "https://assets.mixkit.co/videos/preview/mixkit-worship-leader-singing-in-church-41566-large.mp4",
       duration: "1:20:00",
       date: "2026.05.24",
@@ -77,7 +77,7 @@ export default function App() {
     },
     {
       title: "할렐루야 찬양대 - 은혜 아니면",
-      desc: "주일 2부 예배 중 드려진 할렐루야 찬양대의 은혜로운 특별 찬양 영상입니다.",
+      desc: "주일만찬예배 중 드려진 할렐루야 찬양대의 은혜로운 특별 찬양 영상입니다.",
       url: "https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-pianist-playing-classical-music-42289-large.mp4",
       duration: "5:30",
       date: "2026.05.17",
@@ -226,8 +226,8 @@ export default function App() {
                 <div className="space-y-6">
                   {[
                     { title: "주일 1부 예배", time: "오전 09:00", place: "대예배실" },
-                    { title: "주일 2부 예배", time: "오전 11:00", place: "대예배실" },
-                    { title: "주일 오후 예배", time: "오후 02:00", place: "대예배실" },
+                    { title: "주일만찬예배", time: "오전 11:00", place: "대예배실" },
+                    { title: "주일말씀집회", time: "정오 12:00", place: "대예배실" },
                     { title: "수요 기도회", time: "오후 07:30", place: "소예배실" },
                     { title: "금요 철야 기도회", time: "오후 09:00", place: "대예배실" },
                   ].map((item, idx) => (
