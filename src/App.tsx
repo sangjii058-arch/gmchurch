@@ -21,10 +21,14 @@ import {
   Youtube,
   Facebook,
   Image as ImageIcon,
-  Maximize2
+  Maximize2,
+  Video,
+  Sparkles
 } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+
+import InquirySection from "./components/InquirySection";
 
 // @ts-ignore
 import galleryPhoto from "@/pictures/gallery_photo.jpg";
@@ -39,6 +43,7 @@ export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0);
   const [lightboxPhoto, setLightboxPhoto] = useState<{ image: string; title: string; desc: string; date: string; tag: string } | null>(null);
+  const [showVideoModal, setShowVideoModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,6 +59,7 @@ export default function App() {
     { name: "사역안내", href: "#ministry" },
     { name: "미디어 갤러리", href: "#media" },
     { name: "교회소식", href: "#community" },
+    { name: "온라인문의", href: "#inquiry" },
     { name: "오시는길", href: "#contact" },
   ];
 
@@ -548,6 +554,9 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        {/* Online Inquiry & Counseling Section */}
+        <InquirySection />
 
         {/* Contact Section */}
         <section id="contact" className="py-24 px-6 bg-primary text-white">
