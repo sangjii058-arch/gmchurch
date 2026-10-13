@@ -23,7 +23,8 @@ import {
   Image as ImageIcon,
   Maximize2,
   Video,
-  Sparkles
+  Sparkles,
+  MessageCircle
 } from "lucide-react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
@@ -594,6 +595,15 @@ export default function App() {
               </div>
               
               <div className="mt-12 flex gap-4">
+                <a
+                  href="https://open.kakao.com/o/sR8bzcSi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-[#FEE500] text-[#191919] flex items-center justify-center hover:scale-110 transition-all shadow-md"
+                  title="카카오톡 1:1 상담 오픈채팅"
+                >
+                  <MessageCircle size={20} />
+                </a>
                 <button className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all">
                   <Instagram size={20} />
                 </button>

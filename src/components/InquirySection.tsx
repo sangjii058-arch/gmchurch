@@ -235,15 +235,17 @@ export default function InquirySection() {
             </div>
             <div className="pt-4 border-t border-background flex items-center justify-between">
               <div>
-                <p className="font-semibold text-sm text-primary">광명교회 카카오채널</p>
-                <p className="text-[11px] text-on-surface/50">상시 메시지 접수 가능</p>
+                <p className="font-semibold text-sm text-primary">광명교회 1:1 오픈채팅</p>
+                <p className="text-[11px] text-on-surface/50">실시간 1:1 채팅 문의 가능</p>
               </div>
-              <button
-                onClick={() => alert("카카오톡 플러스친구 [광명교회]를 검색하시거나 채널을 추가해 주세요.")}
-                className="bg-[#FEE500] text-[#191919] text-xs font-bold px-4 py-2.5 rounded-full hover:bg-[#FEE500]/90 transition-colors shadow-sm"
+              <a
+                href="https://open.kakao.com/o/sR8bzcSi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#FEE500] hover:bg-[#fae100] text-[#191919] text-xs font-bold px-4 py-2.5 rounded-full transition-all shadow-sm inline-flex items-center gap-1 cursor-pointer"
               >
-                채널 바로가기
-              </button>
+                <span>채팅 바로가기</span>
+              </a>
             </div>
           </div>
 
